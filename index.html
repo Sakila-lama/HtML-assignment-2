@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scaled">
+  <title> Pizza Valley</title>
+  <meta name="description" content="Pizza website">
+  <meta name="robots" content="noindex, nofollow">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <!--div to contain logo-->
+    <div>
+      <a href="index.html"><img src="./img/logo.jpg" alt="logo" /></a>
+    </div>
+    <nav>
+      <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </menu>
+    </nav>
+  </header>
+  <div class="heading">
+    <h1>Order Here</h1>
+  </div>
+
+
+  <main>
+    <!-- section 1-->
+    <section>
+      <form>
+        <div class="form-group"> <!--Information section-->
+          <label for="name">Name :</label>
+          <input type="text" class="form-control" id="name" placeholder="--Name--">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email :</label>
+          <input type="text" class="form-control" id="Email" placeholder="--Email address--">
+        </div>
+        <div class="form-group">
+          <label for="name">Phone :</label>
+          <input type="text" class="form-control" id="Phone" placeholder="--Phone number--">
+        </div>
+
+<!--pizza quantity-->
+        <div>
+          <h2>Customize your pizza</h2>
+          <label for="num_of_Pizza">Pizza Quantity : </label>
+          <input type="number" class="form-control" id="num_of_Pizza" name="num_of_Pizza" placeholder="Number of Pizza">
+        </div>
+        <br> <!--breaks the line-->
+
+        <!--pizza size-->
+        <label> Pizza Size </label>
+        <div>
+          <select name="Pizza Size " id="pizza_size">
+            <option value=""> --Select your pizza size--</option>
+            <option value="--Small"> Small</option>
+            <option value="--Medium"> Medium</option>
+            <option value="--Large"> Large</option>
+            <option value="--Extra large"> Extra large</option>
+            <option value="--Party size"> Party size</option>
+          </select>
+        </div>
+        <br>
+
+        <!--pizza crust-->
+        <label> Pizza Crust </label>
+        <div>
+          <select name="Pizza Crust" id="pizza_crust">
+            <option value=""> --Select your pizza crust--</option>
+            <option value="--Thin Crust"> Regular</option>
+            <option value="--Thin Crust"> Thin Crust</option>
+            <option value="--Gluten free crust"> Gluten free crust</option>
+            <option value="--cauliflower Crust"> Cauliflower crust</option>
+          </select>
+        </div>
+        <br>
+
+        <!--pizza sauce-->
+        <label>Pizza Sauce </label>
+        <div>
+          <select name="Pizza Sauce" id="pizza_sauce">
+            <option value=""> --Select your pizza sauce--</option>
+            <option value="--Marinara Sauce"> Marinara Sauce</option>
+            <option value="--Pesto Sauce"> Pesto Sauce</option>
+            <option value="--Alfredo Sauce"> Alfredo Sauce</option>
+          </select>
+        </div>
+        <br>
+
+        <!--cheese-->
+        <label> Cheese </label>
+        <div>
+          <select name="Cheese" id="Cheese_option">
+            <option value=""> --Select your cheese--</option>
+            <option value="--No Cheese"> No Cheese</option>
+            <option value="--Regular Cheese"> Regular Cheese</option>
+            <option value="--Extra cheese"> Extra Cheese</option>
+            <option value="--Plant based"> Plant Based Cheese </option>
+          </select>
+        </div>
+        <br>
+
+        <!--toppings-->
+        <label>Toppings </label> <!--choosing multiple option-->
+        <div>
+          <input type="checkbox" id="RedOnions" name="RedOnions" value="RedOnions" />
+          <label for="RedOnions">Red Onions</label>
+          <input type="checkbox" id="GreenPeppers" name="GreenPeppers" value="GreenPeppers" />
+          <label for="GreenPeppers">Green Peppers</label>
+          <input type="checkbox" id="Mushrooms" name="Mushrooms" value="Mushrooms" />
+          <label for="Mushrooms">Mushrooms</label>
+          <input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" />
+          <label for="Pepperoni">Pepperoni</label>
+          <input type="checkbox" id="BaconCrumble" name="BaconCrumble" value="BaconCrumble" />
+          <label for="BaconCrumble">Bacon Crumble</label>
+          <input type="checkbox" id="GrilledChicken" name="GrilledChicken" value="GrilledChicken" />
+          <label for="GrilledChicken">Grilled Chicken</label>
+          <input type="checkbox" id="HotItalianSausages" name="HotItalianSausages" value="HotItalianSausages" />
+          <label for="HotItalianSausages">Hot Italian Sausages</label>
+
+        </div>
+        <br>
+
+        <div> <!--service method for delivery-->
+          <label> Service Method: </label>
+          <label for="choice1">
+            <input type="radio" name="method" value="Delivery" id="choice1"> Delivery
+          </label>
+          <label for="choice2">
+            <input type="radio" name="method" value="Takeout" id="choice2"> Takeout
+          </label>
+        </div>
+        <!--submit button-->
+        <button type="submit" class="btn-primary" id="btn-submit">Checkout</button><br>
+      </form>
+    </section>
+
+    <!--image section-->
+    <section> <!--section 2-->
+      <div class="img-container">
+        <img src="./img/pizza.jpg" alt="Image of pizza" />
+      </div>
+    </section>
+  </main>
+
+  <!--ending section-->
+  <footer>
+    <h5>Thanks for visiting! Copyright &copy; Pizza Valley 2023 </h5>
+  </footer>
+
+</body>
+
+</html>
